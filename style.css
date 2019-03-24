@@ -1,0 +1,102 @@
+body {
+	background: rgb(252, 250, 242);
+	width: 350px;
+}
+
+
+.nav-bar {
+	background: linear-gradient(to right, #062C8D, #0FC4FF);
+	height: 50px;
+	width: 450px;
+	position: relative;
+	left: -20px;
+	top: -17.5px;
+	box-shadow: 1px 1px #eaecef;
+}
+
+.nav-bar__list {
+	position: relative;
+}
+
+.nav-bar__item {
+	color: rgb(252, 250, 242);
+	font-family: 'Open Sans', serif;
+	display: inline;
+	margin-right: 8px;
+	position: relative;
+	left: -10px;
+	top: 15px;
+}
+
+/*.borderLeftRight {
+  display: inline-block;
+  position: relative;
+  color: #474E51;
+}*/
+
+.nav-bar__item::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #5878F3;
+  transform-origin: bottom right;
+  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.nav-bar__item:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
+.header {
+	font-family: 'Source Serif Pro', serif;		
+	font-size: 10px;
+	position: relative;
+	left: 10px;
+	top: 10px;
+	width: 300px;
+}
+
+.logo {
+	margin-top: 20px;
+	position: relative;
+	left: 25px;
+	top: -35px;
+	width: 100%;
+	height: auto;
+}
+
+.body {
+	font-family: 'EB Garamond', serif;
+}
+
+.contact-button {
+	color: #0FC4FF !important;
+	font-family: 'Open Sans', serif;
+	text-transform: uppercase;
+	background: rgb(252, 250, 242);
+	padding: 10px;
+	border: 1px solid #0FC4FF !important;
+	border-radius: 8px;
+	display: inline-block;
+	text-decoration: none;
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+}
+
+.contact-button:hover {
+	color: #ffffff !important;
+	background: #062C8D;
+	border-color: #062C8D !important;
+	transition: all 0.4s ease 0s;
+}
+
+
+/*FONT FOR BODY TEXT*/
