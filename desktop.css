@@ -11,6 +11,7 @@ body {
 	position: fixed;
 	top: 0;
 	left: 0;
+	z-index: 1;
 }
 
 .nav-bar__list {
@@ -32,30 +33,15 @@ body {
 	color: rgb(252, 250, 242);
 }
 
-.nav-bar__item__link::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #5878F3;
-  transform-origin: bottom right;
-  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
-}
-
-.nav-bar__item__link:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
 .logo {
-
+	z-index: 2;
 	position: fixed;
-	top: 0;
-	left: 0%;
+	top: 2.5%;
+	left: 7.5%;
 	height: 20%;
+	border: 2px solid grey;
+
+	/*border-radius: 2% / 5%;*/
 }
 
 .page-top {
@@ -67,16 +53,53 @@ body {
 	z-index: -1;
 }
 
+.contact-button {
+	color: #0FC4FF !important;
+	font-family: 'Open Sans', serif;
+	text-transform: uppercase;
+	background: rgb(252, 250, 242);
+	padding: 10px;
+	border: 1px solid #0FC4FF !important;
+	border-radius: 8px;
+	display: inline-block;
+	text-decoration: none;
+	margin-top: 375px;
+	position: absolute;
+	left: 225px;
+	top: 200px;
+/*	right: 0px;
+	bottom: 0px;*/
+}
+
+.contact-button:hover {
+	color: #ffffff !important;
+	background: #062C8D;
+	border-color: #062C8D !important;
+	transition: all 0.4s ease 0s;
+}
+
+.top-quote {
+	font-family: 'EB Garamond', serif;
+	position: absolute;
+	left: 25px;
+	top: 150px;
+}
+
 .sample-image {
 	height: 500px;
 	width: auto;
+	position: relative;
+	left: 275px;
 }
 
 .body {
+	background: white;
 	font-family: 'EB Garamond', serif;
-/*	position: fixed;
-	top: 20%;*/
+	z-index: -1;
+	position: relative;
+	top: 45px;
 }
+
 
 .body-section-title {
 	text-align: center;
@@ -99,27 +122,4 @@ body {
 .team-section{
 	position: relative;
 	left: 0;
-}
-
-
-.contact-button {
-	color: #0FC4FF !important;
-	font-family: 'Open Sans', serif;
-	text-transform: uppercase;
-	background: rgb(252, 250, 242);
-	padding: 10px;
-	border: 1px solid #0FC4FF !important;
-	border-radius: 8px;
-	display: inline-block;
-	text-decoration: none;
-/*	position: fixed;*/
-/*	right: 0px;
-	bottom: 0px;*/
-}
-
-.contact-button:hover {
-	color: #ffffff !important;
-	background: #062C8D;
-	border-color: #062C8D !important;
-	transition: all 0.4s ease 0s;
 }
